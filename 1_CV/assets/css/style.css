@@ -1,0 +1,106 @@
+.left-container{
+    position: fixed;
+    width: 400px;
+    height: 100vh;
+    background-color: #71753B;
+}
+body{
+    margin: 0;
+}
+.foto-contact{
+    position: absolute;
+    top: 150px;
+    text-align: center;
+    font-family:'times new roman', Times, serif;
+}
+.foto{
+    width: 80%; 
+    border-radius: 60px;
+}
+
+.self{
+    color: white;
+    text-align: center;
+    font-family: 'times new roman', Times, serif;
+    margin-bottom: 20px;
+}
+.contact-button{
+    width: 50%;
+    border-radius: 15px;
+    margin-bottom: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    border-style: 5px inherit;
+}
+.contact-button:hover{
+    background-color: green;
+    color: white;
+    transition: 500ms;
+}
+
+.right-container{
+    position: absolute;
+    left: 400px;
+    height: 100vh;
+    background-color: white;
+}
+
+.top-bar{
+    padding-top: 50px;
+    padding-left: 100px;
+}
+.title{
+    font-style: italic;
+    font-size: 200%;
+}
+.nav-links{
+    float: right;
+    padding-right: 50px;
+}
+.menu{
+    font-size: 15px;
+    padding: 0 15px
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#profile{
+    padding-top: 200px;
+    padding-left: 100px;
+}
+#about{
+    padding-top: 250px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+#experience{
+    padding-top: 250px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+#acheivements{
+    padding-top: 200px;
+    padding-left: 100px;
+}
+#contact{
+    padding-top: 250px;
+    padding-left: 100px;
+}
+
+#footer{
+    padding-top: 250px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+p, li{
+    line-height: 200%;
+}
