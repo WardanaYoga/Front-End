@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form>
+        <p>
+        <label for="nama">Nama:</label>
+        <input type="text" name="nama" placeholder="ketikan nama anda!" required>
+        </p>
+
+        <p>
+        <label for="jeniskelamin">Jenis Kelamin</label>
+        <input type="radio" name="jeniskelamin" value="Laki-laki" checked>Laki-laki
+        <input type="radio" name="jeniskelamin" value="Perempuan">Perempuan
+        </p>
+
+        <p>
+            <label for="kotakelahiran">Kota Kelahiran</label>
+            <select name="kotakelahiran" id="kotakelahiran">
+                <option value="Tangerang" selected >Tangerang</option>
+                <option value="Malang">Malang</option>
+                <option value="Jakarta">Jakarta</option>
+                <option value="Bandung">Bandung</option>
+            </select>
+        </p>
+
+        <p>
+        <label for="pertanyaan">Pertanyaan:</label>
+        <textarea name="pertanyaan" id="pertanyaan" rows="5" cols="20" placeholder="Silahkan isi pertanyaan anda"></textarea>
+        </p>
+
+        <p>
+            <input type="checkbox" name="" id=""> Saya setuju dengan syarat dan ketentuan yang berlaku
+        </p>
+
+        <button type ="submit">Kirim</button> 
+    </form>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>addEventListener</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        #kotak {
+            height: 100px;
+            width: 100px;
+            background-color: green;
+            margin: 20px;
+        }
+
+        #lingkaran{
+            height: 100px;
+            width: 100px;
+            background-color: blue;
+            margin: 20px;
+            border-radius:  80%;
+        }
+    </style>
+</head>
+</head>
+<body>
+    <div id = "kotak"></div>
+    <div id = "lingkaran"></div>
+    <script>
+    $("#lingkaran").mouseout(function(){
+        alert("dari jquery");
+    })
+
+    $(document).keydown(myFunction);
+    function myFunction(){
+        console.log(event);
+        alert("saya memencet tombol: " + event.key);
+    }
+
+    </script>
+</body>
+</html>

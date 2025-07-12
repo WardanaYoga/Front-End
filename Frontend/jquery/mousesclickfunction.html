@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mouseclickfunction</title>
+    <style>
+        #kotak{
+            width: 50px;
+            height: 50px;
+            background-color: blue;
+            border-radius: 10%;
+            margin: 10px;
+        }
+        .lingkaran{
+            width: 50px;
+            height: 50px;
+            background-color: green;
+            border-radius: 50%;
+            margin: 10px;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <div id="kotak">
+    </div>
+    <div class="lingkaran">
+    </div>
+    <div class="lingkaran">
+    </div>
+
+    <script>
+        $(".lingkaran").click(function(){
+            alert("hello world!");
+        });
+        $("#kotak").click(function(){
+            alert("hello, world!")
+        })
+    </script>
+</body>
+</html>

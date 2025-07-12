@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom CSS</title>
+    <style>
+        #textcolor{
+            color: black;
+        }
+
+        #textzoom{
+            font-size: 30px;
+        }
+        img {
+            width: 500px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div>
+            <h1 id="textcolor">Hello, World!</h1>
+        </div>
+        <div>
+            <button id="biru">Biru</button>
+            <button id="merah">Merah</button>
+        </div>
+    </div>
+
+    <div>
+        <div>
+            <h2 id="textzoom">Hello, World!</h2>
+        </div>
+        <div>
+            <button id="besar">Perbesar</button>
+            <button id="kecil">Perkecil</button>
+        </div>
+    </div>
+
+    <div>
+        <img src="img/photo.png" id="gambar">
+    </div>
+    <script>
+        document.getElementById("biru").onclick = function(){
+            document.getElementById("textcolor").style.color= "blue";
+        }
+        document.getElementById("merah").onclick = function(){
+            document.getElementById("textcolor").style.color= "red";
+        }
+        document.getElementById("besar").onclick = function(){
+            document.getElementById("textzoom").style.fontSize= "40px";
+        }
+        document.getElementById("kecil").onclick = function(){
+            document.getElementById("textzoom").style.fontSize= "30px";
+        }
+        document.getElementById("gambar").onclick = function(){
+            document.getElementById("gambar").style.display = "none";
+        }
+    </script>
+</body>
+</html>

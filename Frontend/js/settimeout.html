@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>setTimeout</title>
+</head>
+<body>
+    <p id="text1"></p>
+    <p id="text2"></p>
+    <p id="text3"></p>
+    <script>
+        setTimeout(tampilkanText, 2000);
+        setTimeout(tampilkanText2, 2500);
+        setTimeout(tampilkanText3, 3000);
+        function tampilkanText(){
+            document.getElementById("text1").innerHTML = "Happy Birthdayy";
+        }
+        function tampilkanText2(){
+            document.getElementById("text2").innerHTML = "Happy Birthdayy";
+        }
+        function tampilkanText3(){
+            document.getElementById("text3").innerHTML = "Happy Birthdayy";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom to Atribut</title>
+    <style>
+        img{
+            width: 500px;
+            margin: 60px;
+        }
+
+        #blue{
+            width: 50px;
+            height: 50px;
+            background-color: blue;
+            border-radius: 60%;
+            float: left;
+            margin: 0 5px;
+        }
+        #green{
+            width: 50px;
+            height: 50px;
+            background-color: green;
+            border-radius: 60%;
+            float: left;
+            margin: 0 5px;
+        }
+
+        #red{
+            width: 50px;
+            height: 50px;
+            background-color: red;
+            border-radius: 60%;
+            float: left;
+            margin: 0 5px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img id="logo" src="img/photo.png" alt="">
+    </div>
+
+    <div>
+        <h2>Pilihan Logo</h2>
+        <div id="blue"></div><!--warna bisa seperti gambar dengan menggunakan website image color picker-->
+        <div id="green"></div>
+        <div id="red"></div>
+    </div>
+    <script>
+        document.getElementById("blue").onclick = function(){
+            document.getElementById("logo").src = "img/photo.png" 
+        }
+        document.getElementById("green").onclick = function(){
+            document.getElementById("logo").src = "img/photo1.png" 
+        }
+        document.getElementById("red").onclick = function(){
+            document.getElementById("logo").src = "img/photo2.jpg" 
+        }
+    </script>
+</body>
+</html>

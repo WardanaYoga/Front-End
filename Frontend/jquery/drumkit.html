@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>drumkit</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        body{
+            text-align: center;
+        }
+        img{
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Drum Kit</h1>
+    <button id ="hihat"><img src="image/hihat.jpg" alt=""></button>
+    <button id ="snare"><img src="image/snare.jpg" alt=""></button>
+    <button id ="tom"><img src="image/tom.jpg" alt=""></button>
+    <button id ="floortom"><img src="image/floortom.jpg" alt=""></button>
+    <button id ="crash"><img src="image/crash.jpg" alt=""></button>
+    <button id ="kick"><img src="image/kick.jpg" alt=""></button>
+
+    <script>
+        
+        $("#hihat").click(function(){
+            var hihat = new Audio ("audio/hihat.mp3");
+            hihat.play();
+        })
+        $("#snare").click(function(){
+            var snare = new Audio ("audio/snare.mp3");
+            snare.play();
+        })
+        $("#tom").click(function(){
+            var tom = new Audio ("audio/tom.mp3");
+            tom.play();
+        })
+        $("#floortom").click(function(){
+            var floortom = new Audio ("audio/floortom.mp3");
+            floortom.play();
+        })
+        $("#crash").click(function(){
+            var crash = new Audio ("audio/crash.mp3");
+            crash.play();
+        })
+        $("#kick").click(function(){
+            var kick = new Audio ("audio/kick.mp3");
+            kick.play();
+        })
+
+        $(document).keydown(function(){
+            if(event.key == "a"){
+                var hihat = new Audio ("audio/hihat.mp3");
+                hihat.play();
+            }else if (event.key == "s"){
+                var snare = new Audio ("audio/snare.mp3");
+            snare.play();
+            }else if (event.key == "d"){
+                var tom = new Audio ("audio/tom.mp3");
+            tom.play();
+            }else if (event.key == "j"){
+                var floortom = new Audio ("audio/floortom.mp3");
+            floortom.play();
+            }else if (event.key == "k"){
+                var crash = new Audio ("audio/crash.mp3");
+            crash.play();
+            }else if (event.key == "l"){
+                var kick = new Audio ("audio/kick.mp3");
+            kick.play();
+            }
+        })
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>variabel javascript</title>
+</head>
+<body>
+    <div>
+        <h1>Formulir</h1>
+        <div>
+            <label for="">Masukan teks: </label>
+            <br>
+            <input type="text" placeholder="masukan teks anda" id="teksAlert">
+            <button id="tombol">Tampilkan Alert!</button>
+        </div>
+    </div>
+    <script>
+        //var text = "Hello, World!"
+        //alert(text);
+        document.getElementById("tombol").onclick = function(){
+            var text = document.getElementById("teksAlert").value;
+                alert(text)
+        };
+    </script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>local stage</title>
+</head>
+<body>
+    <p id="topscore"></p>
+    <script>
+        localStorage.setItem("nama","Kiaa");
+        document.getElementById("topscore").innerHTML = localStorage.getItem("nama")
+    </script>
+</body>
+</html>

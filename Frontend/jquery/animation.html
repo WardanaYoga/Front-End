@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animate</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        .kotak{
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            margin: 10px;
+            position: absolute;
+        }
+
+        #btn1{
+            margin: 10px;
+        }
+        #head{
+            margin: 10px;
+        }
+        #btn2{
+            margin: 10px;
+        }
+
+        .head{
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <button>Animation</button>
+    <div class="kotak">
+
+    </div>
+
+    <script>
+        $("button").click(function(){
+            $(".kotak").animate({height: '250px'})
+            $(".kotak").animate({width: '250px'})
+            $(".kotak").animate({width: '100px'})
+        })
+    </script>
+</body>
+</html>

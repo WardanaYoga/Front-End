@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>While</title>
+</head>
+<body>
+    <p id="kota"></p>
+
+
+    <script>
+        var kota = ["Tangerang", "Malang", "Jakarta", "Edinburgh"]
+        var x = 0;
+        var kotaPage = "Saya pernah ke kota ";
+        console.log("Saya pernah ke kota " + kota[0])
+        while(x < kota.length){
+            console.log("saya pernah ke kota " + kota[x]);
+            document.getElementById("kota").innerHTML += kotaPage + kota[x] + "<br>";
+            x++;
+        }
+    </script>
+</body>
+</html>

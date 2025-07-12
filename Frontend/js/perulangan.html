@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perulangan</title>
+</head>
+<body>
+    <p>List angka 1 - 10</p>
+    <p id="angka"></p>
+    <p id="var-angka"></p>
+    <script>
+        var x = 5;
+        var hasil = "";
+            for(let x = 1; x <= 10; x++){
+                hasil += x + "";
+                console.log(x);
+                document.getElementById("angka").innerHTML += "angka " + x + "<br>";
+
+        }
+        document.getElementById("var-angka").innerHTML = x
+        
+    </script>
+</body>
+</html>

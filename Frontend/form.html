@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form>
+        <label for="user-id">Username : </label>
+        <input type="text" id="user-id" name="user-id" placeholder="Enter your username" required>
+        <br>
+        <label for="pass">Password : </label>
+        <input type="password" id="pass" name="pass" placeholder="Enter your password" required>
+        <br>
+        <input type="radio" id="pria" name="jeniskelamin"><label for="text">Pria</label>
+        <input type="radio" id="wanita" name="jeniskelamin"><label for="text">Wanita</label>
+        <br>
+        <input type="checkbox" id="olahraga"><label for="olahraga">olahraga</label>
+        <input type="checkbox" id="mendaki"><label for="mendaki">mendaki</label>
+        <input type="checkbox" id="menyanyi"><label for="menyanyi">menyanyi</label>
+        <br>
+        <label for="alamat">Alamat : </label>
+        <textarea id="alamat" name="alamat" rows="4" cols="50" placeholder="Masukkan alamat Anda"></textarea>
+        <br>
+        <select name="kota" id="kota" required>
+            <option value="tangerang">tangerang</option>
+            <option value="malang">malang</option>
+            <option value="makasar">makasar</option>
+        </select>
+        <br>
+        <button type="submit">Kirim!</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,100 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <style>
+        body{
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: rgba(29, 124, 240, 0.5); /* tanpa transparansi */
+            display: block;
+        }
+        .bold{
+            font-weight: bold;
+            margin-left: 100px;
+        }
+        h1{
+            text-align: center;
+        }
+    </style>
+ </head>
+ <body>
+    <h1>Game Tembak Burung</h1>
+    <h2 class="bold">Top Score: <span id="topscore"></span></h2>
+    <p class="bold">total waktu: <span id="totalwaktu"></span></p>
+    <img id="burung">
+    
+
+
+    <script> 
+        var counter = 1;
+        var start = "";
+        var end = "";
+        var totalWaktu = "";
+        
+        if (localStorage.getItem("topScore") != null){
+            var topScore = localStorage.getItem("topScore");
+            document.getElementById("topscore").innerHTML = topScore + "s";
+        }
+        
+
+        //1. tampilkan burung dengan random
+        tampilkanGambar();
+        function tampilkanGambar(){
+            var top = Math.random() * 400;
+            var left = Math.random() * 400;
+
+            start = new Date().getTime();
+
+            document.getElementById("burung").src = "img/burung1.jpg"
+            document.getElementById("burung").style.height = 60 + "px";
+            document.getElementById("burung").style.width = 60 + "px";
+            document.getElementById("burung").style.top = top + "px";
+            document.getElementById("burung").style.left = left + "px";
+            document.getElementById("burung").style.position = "relative";
+            document.getElementById("burung").style.display = "block";
+        }
+
+        //2. kalau burung ditembak, ganti gambar menjadi boom
+        document.getElementById("burung").onclick = function(){
+            document.getElementById("burung").src = "img/boom.jpg";
+            document.getElementById("burung").style.height = 120 + "px";
+            document.getElementById("burung").style.width = 120 + "px";
+            setTimeout(sembunyikanGambar, 300);
+        
+        //3. setelah 5 kali tembakan, hitung total waktunya
+            if (counter < 5){
+                setTimeout(tampilkanGambar, 500);
+                counter++;
+            }else{
+                alert("SELESAIIIII");
+                end = new Date().getTime();
+                totalWaktu = (end - start) / 1000;
+                document.getElementById("totalwaktu").innerHTML = totalWaktu + "s";
+                setTopscore();
+            }
+        }
+
+
+        function sembunyikanGambar(){
+            document.getElementById("burung").style.display = "none";
+        }
+
+        
+
+        //4. set top Score
+        function setTopscore(){
+            if (localStorage.getItem("topScore") == null){
+                localStorage.setItem("topScore", totalWaktu);
+                document.getElementById("topscore").innerHTML = totalWaktu + "s";
+            }else if(topScore > totalWaktu){
+                localStorage.setItem("topScore", totalWaktu);
+                document.getElementById("topscore").innerHTML = totalWaktu + "s";
+            }
+        }
+    </script>
+ </body>
+ </html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>this keyword</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        .kotak{
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            margin: 10px;
+        }
+
+        #btn1{
+            margin: 10px;
+        }
+        #head{
+            margin: 10px;
+        }
+        #btn2{
+            margin: 10px;
+        }
+
+        .head{
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <button class="ajaib">btn1</button>
+    <button class="ajaib">btn2</button>
+    <button class="ajaib">btn3</button>
+    <p class="ajaib">Hello World</p>
+    <div class="kotak ajaib">
+
+    </div>
+    <script>
+        $(".ajaib").click(function(){
+            $(this).hide();
+        });
+    </script>
+</body>
+</html>

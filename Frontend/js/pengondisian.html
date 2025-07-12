@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pengondisian</title>
+</head>
+<body>
+    <p>masukan passwordnya: </p>
+    <P><input type="text" id="love u"></p>
+    <button id="submit">Submit</button>
+    <script>
+        /**var password = "jari";
+        if(password == "jari-jari"){
+            console.log("Hello, World")
+            alert("Hello, World")
+        }else{
+            console.log("password anda salah")
+            alert("password anda salah")
+        }**/
+       document.getElementById("submit").onclick = function(){
+        var password = document.getElementById("love u").value;
+        if(password == "kiaa"){
+            alert("password anda benar")
+        }else{
+            alert("password anda salah")
+        }
+    } 
+    </script>
+</body>
+</html>

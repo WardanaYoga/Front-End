@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Penulisan</title>
+</head>
+<body>
+    <!--inline-->
+    <button onclick="alert('Hello, World');" >inline</button>
+    <br>
+    <br>
+    <button onclick="tampilkanAlert()">Internal</button>
+    <br><br>
+    <button onclick="tampilkanPopup()">Eksternal</button>
+
+    <!--internal-->
+    <script>
+        function tampilkanAlert(){
+            alert('Hello, World!');
+        }
+    </script>
+
+    <!--Eksternal-->
+    <script src="eksternal/main.js"></script>
+
+
+</body>
+</html>

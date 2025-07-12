@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>htmldom</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <style>
+        .esai{
+            margin: 10px;
+        }
+        #teks{
+            text-align: left;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="esai">
+        <p id="teks">apa nama ibukota indonesia?</p>
+        <button id="submit">Jawaban</button>
+    </div>
+
+    <script>
+        $("#submit").click(function(){
+            $("#teks").html("<b>jakarta</b>");
+        });
+    </script>
+</body>
+</html>
